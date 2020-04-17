@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+		<title> Тестовое задание на верстку  </title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+        <link href="scripts/magnific/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <!-- <script type="text/javascript" src="scripts/magnific/jquery.magnific-popup.js">-->
+        <script type="text/javascript" src="scripts/script.js"></script>
+      <script src="scripts/magnific/jquery.magnific-popup.min.js"></script>
+    </head>
+
+<body>
+
+<script>
+$(document).ready(function() {
+    $(".pictures a").magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: { verticalFit: true },
+        gallery: {enabled: true},
+        callbacks: {    
+            buildControls: function() {
+            // re-appends controls inside the main container
+            this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+            }
+        }   
+    });  
+});
+
+
+
+
+</script>
+
+
+	<div class="base">
+
+		<div class="header">
+            <div class="Techart_logo">
+                <img src="./img/logo.jpg">
+		    </div>
+
+		    <div>
+                <ul class="main-menu">
+                    <li><a href="#company">о компании</a></li>
+                    <li><a href="#services">каталог</a>
+                        <ul class="cd-accordion-menu">  
+                            <li class="has-children">           
+                                <input type="checkbox" name ="group-1" id="group-1" checked>
+                                <label for="group-1">Заголовок</label>
+                                    <ul class="sub">
+                                        <li><a href="#0">Подзаголовок1</a></li>
+                                        <li><a href="#0">Подзаголовок2</a></li>
+                                        <li><a href="#0">Подзаголовок3</a></li>
+                                    </ul>          
+                            </li>
+                            <li><a  href="#0">Заголовок</a></li>
+                            <li class="last"><a  href="#0">Заголовок</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#team">новости</a></li>
+                    <li><a href="#team">контакты</a></li>
+                </ul>
+		    </div>	
+            
+            <div class="header-right">
+
+		        <div class="phone_num"><span>+7(777)</span> 777-77-77</div>
+
+                <div class="find_str"> 
+                     <input id="find_str" type="text"  name="find" value=""><br>
+                </div>
+
+		        <div class="find_button">
+                    <button onclick="find_str()"> <img src="img/search-icon.png" /> </button>
+                </div>
+		    </div>
+
+        </div>    
+	<hr>	
+			
+		<div class="slider">
+            
+			<img src="./img/ban.jpg" width="922px"> <!-- Тут будет слайдер -->
+		</div>
+
+		<div class="pictures">
+			<div class="pic1">
+                <a href="img/pic-big.jpg" title="Заголовок"> <img src="./img/pic-1.jpg" alt="Описание под изображением"/></a>
+                <p>Описание под изображением</p>
+            </div>
+            <div class="pic2">
+                <a href="img/pic-2.jpg" title="Заголовок"> <img src="img/pic-2.jpg" alt="Описание под изображением"/></a>
+                <p>Описание под изображением</p>
+            </div>
+            <div class="pic3">
+                <a href="img/pic-3.jpg" title="Заголовок"> <img src="img/pic-3.jpg" alt="Описание под изображением"/></a>
+                <p>Описание под изображением</p>
+            </div>
+            <div class="pic4">
+                <a href="img/pic-4.jpg" title="Заголовок"> <img src="img/pic-4.jpg" alt="Описание под изображением"/></a>
+                <p>Описание под изображением</p>
+            </div> 
+
+		</div> 
+
+		<div class="drop_down">			
+<script type="text/javascript">
+function change_visibility (block_4_close, block_4_open) {
+    document.getElementById(block_4_close).style.display='none';
+    document.getElementById(block_4_open).style.display='';}
+</script>
+            <div id="r0">
+               <p>Тестовое задание предназначено для повышения навыков программирования</p>
+               <a href="javascript:change_visibility ('r0', 'r1')"> Подробнее </a>
+               <a href="javascript:change_visibility ('r0', 'r1')"><img id="down" src="img/arrow_down.png"/></a>
+            </div>
+            <div id="r1" style="display:none">
+                <p>Тестовое задание предназначено для повышения навыков программирования</p>
+                <!--<a href="#" onClick="change_visibility ('r1', 'r0')"> Свернуть </a>-->
+                <a href="javascript:change_visibility ('r1', 'r0')">Свернуть</a>
+                <a href="javascript:change_visibility ('r1', 'r0')"><img id="up" src="img/arrow_up.png"/></a>
+                <pre>
+Уровень знаний в значительной степени зависит от личных усилий и способностей, в тов время как структура знаний заметно зависит от
+правильной организации учебного процесса, от индивидуального обучения, от мастерства педагога, от объективности контроля - в
+общем, от всего того, чего обычно не хватает. Путь к достижению этого идеала лежит через трудности создания качественных тестов.
+
+Разработка тестов начинается с анализа содержания преподаваемых знаний и овлаения принципами формулирования тестовых
+заданий. К сожалению, на тесты все еще смотрят как на средство, котрое легко придумать, в то время как сильная сторона тестов - их
+эффективность, проистекающая из теоретической и эмпирической обоснованности.
+
+На третьем этапе от разработчиков нового поколения потребуется некоторая математико-статистическая подготовка, знания 
+теории тестов. Теорию тестов можно определить как совокупность непротиворечивых понятий, форм, методов. аксиом, формул и
+утверждений, способствующих повышению эффективности и качества тестового процесса. Кроме того, может потребоваться и 
+некоторый опыт применения методов статистического анализа, и опыт правильной интерпретации тестовых результатов.            
+                </pre> 
+            </div>
+         
+
+             
+		
+		</div>	
+		<div class="drop_down">			
+<script type="text/javascript">
+function change_visibility (block_4_close, block_4_open) {
+    document.getElementById(block_4_close).style.display='none';
+    document.getElementById(block_4_open).style.display='';}
+</script>
+            <div id="r0">
+               <p>Тестовое задание предназначено для повышения навыков программирования</p>
+               <a href="javascript:change_visibility ('r0', 'r1')"> Подробнее </a>
+               <a href="javascript:change_visibility ('r0', 'r1')"><img id="down" src="img/arrow_down.png"/></a>
+            </div>
+            <div id="r1" style="display:none">
+                <p>Тестовое задание предназначено для повышения навыков программирования</p>
+                <!--<a href="#" onClick="change_visibility ('r1', 'r0')"> Свернуть </a>-->
+                <a href="javascript:change_visibility ('r1', 'r0')">Свернуть</a>
+                <a href="javascript:change_visibility ('r1', 'r0')"><img id="up" src="img/arrow_up.png"/></a>
+                <pre>
+Уровень знаний в значительной степени зависит от личных усилий и способностей, в тов время как структура знаний заметно зависит от
+правильной организации учебного процесса, от индивидуального обучения, от мастерства педагога, от объективности контроля - в
+общем, от всего того, чего обычно не хватает. Путь к достижению этого идеала лежит через трудности создания качественных тестов.
+
+Разработка тестов начинается с анализа содержания преподаваемых знаний и овлаения принципами формулирования тестовых
+заданий. К сожалению, на тесты все еще смотрят как на средство, котрое легко придумать, в то время как сильная сторона тестов - их
+эффективность, проистекающая из теоретической и эмпирической обоснованности.
+
+На третьем этапе от разработчиков нового поколения потребуется некоторая математико-статистическая подготовка, знания 
+теории тестов. Теорию тестов можно определить как совокупность непротиворечивых понятий, форм, методов. аксиом, формул и
+утверждений, способствующих повышению эффективности и качества тестового процесса. Кроме того, может потребоваться и 
+некоторый опыт применения методов статистического анализа, и опыт правильной интерпретации тестовых результатов.            
+                </pre> 
+            </div>
+         
+
+             
+		
+		</div>	
+		<div class="map"> <!-- при случае исправить на гугл -->
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=pKJbbFP6pACQvoQiFSnyEJhInFFHtogI&amp;width=924&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+			<form>
+        		<div class="form"> 
+                    <p>ФОРМА</p>
+                    <input id="name-field" type="text"  name="name" value="Имя"><br>
+                    <input id="phone-field" type="text" name="phone" value="Телефон">
+                    <input id="email-field" type="text" name="email" value="Email"><br>
+                    <div class="checkbox">                     
+                        <input type="checkbox" id="check"><label for="check">Хочу подписаться</label>
+                    </div>
+                        <textarea id="#message-field">Сообщение</textarea>
+                    </div>
+            </form>
+       
+		<hr>
+
+		<div class="footer">
+			<div class="sign">
+                <p>Тестовое задание 2016</p>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="button_in"></a>
+                <a href="#" class="button_fb"></a>
+                <a href="#" class="button_yt"></a>
+            </div>          
+		</div>
+        
+        
+        
+	</div>
+    
+
+
+
+</body>
+
+</html>

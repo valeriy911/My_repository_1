@@ -1,0 +1,38 @@
+/*анимация кнопок навигационных для галлереи*/
+.buttons{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+   
+
+
+.button_close {
+    background:url(img/close.png);
+    width: 19px; 
+    height: 19px;
+    display: inline-block;
+        margin-right:20px;
+}
+
+.button_close:active{background:url(img/close.png)0 18px;}   
+.button_close:hover {background:url(img/close.png)0 18px;} 
+
+.button_nav-left2 {
+    background:url(img/nav-left2.png);
+    width: 12px; 
+    height: 45px;
+    display: inline-block;
+     margin-right:20px;    
+}
+.button_nav-left2:active{background:url(img/nav-left2.png)0 46px;}  
+.button_nav-left2:hover {background:url(img/nav-left2.png)0 46px;} 
+   
+.button_nav-right2 {
+    background:url(img/nav-right2.png);
+    width: 12px; 
+    height: 45px;
+    display: inline-block;      
+}
+.button_nav-right2:active {background:url(img/nav-right2.png)0 46px;}
+.button_nav-right2:hover {background:url(img/nav-right2.png)0 46px;}
